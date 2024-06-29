@@ -25,6 +25,11 @@
   aspect-ratio: 1;
   background: url(./assets/img/dani.png) 100% center / cover;
   animation: radius 8s linear infinite;
+  transition: box-shadow 2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .container {
@@ -47,12 +52,14 @@
 
   h2 {
     font-size: 32px;
+    font-weight: 200;
   }
 }
 
 .name {
   color: blueviolet;
   font-size: 40px;
+  font-weight: 700;
 }
 
 .icon {
