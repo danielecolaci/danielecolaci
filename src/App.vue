@@ -1,4 +1,4 @@
-<script setup>
+<script>
 
 </script>
 
@@ -7,17 +7,18 @@
     <div class="flex content">
       <div class="box"></div>
       <section class="title">
-        <h1>Hi, I Am <br><span class="name">Daniele Colaci</span></h1>
+        <h2>Hi, I Am <br><span class="name">Daniele Colaci</span></h2>
       </section>
       <div class="icon flex">
         <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/danielecolaci" target="_blank"><i class="fa-brands fa-square-github"></i></a>
       </div>
+      <p style="color: gray;">Website Under Construction</p>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 .box {
   width: 400px;
   height: fit-content;
@@ -37,27 +38,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
 }
 
 .title {
   text-align: center;
-  font-size: 40px;
   color: white;
-}
 
+  h2 {
+    font-size: 32px;
+  }
+}
 
 .name {
   color: blueviolet;
+  font-size: 40px;
 }
 
 .icon {
-  gap: 20px;
+  gap: 40px;
   font-size: 32px;
 }
 
 .fa-brands {
   color: rgb(151, 151, 151);
+  transition: color 1s ease;
+
+  &:hover {
+    color: white;
+  }
 }
 
 @keyframes radius {
@@ -76,13 +85,35 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .box {
+    width: 300px;
+  }
+
+  .title h2 {
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .box {
     width: 200px;
   }
 
-  .title {
+  .title h2 {
     font-size: 20px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 12px;
   }
 }
 </style>
