@@ -10,8 +10,10 @@
         <h2>Hi, I Am <br><span class="name">Daniele Colaci</span></h2>
       </section>
       <div class="icon flex">
-        <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/danielecolaci" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank" class="link-btn flex">Connected to
+          Linkedin<i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/danielecolaci" target="_blank" class="link-btn flex">Follow Me on Github<i
+            class="fa-brands fa-github"></i></a>
       </div>
       <p style="color: gray;">Website Under Construction</p>
     </div>
@@ -63,18 +65,33 @@
 }
 
 .icon {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 32px;
   gap: 40px;
   font-size: 32px;
 }
 
-.fa-brands {
-  color: rgb(151, 151, 151);
-  transition: color 1s ease;
+.link-btn {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  width: 260px;
+  padding: 12px 0;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: all 1s ease;
 
   &:hover {
-    color: white;
+    background-color: white;
+    color: black;
   }
 }
+
 
 @keyframes radius {
 
@@ -121,6 +138,17 @@
 
   p {
     font-size: 12px;
+  }
+
+  .icon {
+    gap: 16px;
+  }
+
+  .link-btn {
+    font-size: 12px;
+    font-weight: 500;
+    width: 200px;
+    gap: 12px;
   }
 }
 </style>
