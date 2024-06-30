@@ -11,11 +11,11 @@
       </section>
       <div class="icon flex">
         <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank" class="link-btn flex">Connected to
-          Linkedin<i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/danielecolaci" target="_blank" class="link-btn flex">Follow Me on Github<i
+          LinkedIn<i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/danielecolaci" target="_blank" class="link-btn flex">Follow Me on GitHub<i
             class="fa-brands fa-github"></i></a>
       </div>
-      <p style="color: gray;">Website Under Construction</p>
+      <p style="color: rgba(255, 255, 255, 0.3);">Website Under Construction</p>
     </div>
   </div>
 </template>
