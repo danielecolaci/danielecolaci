@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi, I'm Daniele Colaci, I'm from Italy and I'm a Fullstack Web Developer. 🧑‍💻<br><br>I study the Front-End side and I also take care of the graphic side. 🎨<br><br>I also deal with ux design. 🧠
+Hi, I'm Daniele Colaci, I'm from Italy and I'm a Fullstack Web Developer. 🧑‍💻<br><br>I study the Front-End side and I also take care of the Graphic side. 🎨<br><br>I also deal with UX/UI Design. 🧠
 
 
 ## 🌐 Socials:
