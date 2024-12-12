@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   width: 400px;
   height: fit-content;
   aspect-ratio: 1;
-  background: url(./assets/img/dani.png) 100% center / cover;
+  background: url(./assets/img/dani.webp) 100% center / cover;
   animation: radius 8s linear infinite;
   transition: box-shadow 2s ease-in-out;
 
