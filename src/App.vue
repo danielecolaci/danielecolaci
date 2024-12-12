@@ -11,22 +11,31 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <template>
-  <div id="loading" class="loading-overlay">
-    <div class="loading-spinner"></div>
+  <div id="loading" class="loading-overlay" role="alert" aria-live="assertive">
+    <div class="loading-spinner" aria-label="Loading... Please wait."></div>
   </div>
   <div class="container" style="display: none;">
     <div class="flex content">
-      <div class="box"></div>
+      <div class="box" aria-hidden="true"></div>
       <section class="title">
-        <h2>Hi, I Am <br><span class="name">Daniele Colaci</span></h2>
+        <h2>
+          Hi, I Am <br>
+          <span class="name">Daniele Colaci</span>
+        </h2>
       </section>
       <div class="icon flex">
-        <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank" class="link-btn flex">Connected to
-          LinkedIn<i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/danielecolaci" target="_blank" class="link-btn flex">Follow Me on GitHub<i
-            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank" class="link-btn flex"
+          aria-label="Connect with me on LinkedIn">
+          Connected to LinkedIn
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/danielecolaci" target="_blank" class="link-btn flex"
+          aria-label="Follow me on GitHub">
+          Follow Me on GitHub
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
       </div>
-      <p style="color: rgba(255, 255, 255, 0.3);">Website Under Construction</p>
+      <p style="color: #808080;">Website Under Construction</p>
     </div>
   </div>
 </template>
@@ -69,12 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
   aspect-ratio: 1;
   background: url(./assets/img/dani.webp) 100% center / cover;
   animation: radius 8s linear infinite;
-  transition: box-shadow 2s ease-in-out;
+  transition: box-shadow 2s ease-in-out, transform 2s ease;
 
   &:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    animation-play-state: paused;
+    transform: scale(1.05);
   }
 }
+
 
 .container {
   height: 100vh;
@@ -101,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 .name {
-  color: blueviolet;
+  color: #d4f365;
   font-size: 40px;
   font-weight: 700;
 }
@@ -118,8 +130,8 @@ document.addEventListener("DOMContentLoaded", function () {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: #DDDDDD;
+  border: 2px solid #DDDDDD;
   width: 260px;
   padding: 12px 0;
   border-radius: 12px;
@@ -129,8 +141,8 @@ document.addEventListener("DOMContentLoaded", function () {
   transition: all 1s ease;
 
   &:hover {
-    background-color: white;
-    color: black;
+    background-color: #DDDDDD;
+    color: #202020;
   }
 }
 
