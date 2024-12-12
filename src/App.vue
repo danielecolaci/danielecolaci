@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <template>
+  <main>
   <div id="loading" class="loading-overlay" role="alert" aria-live="assertive">
     <div class="loading-spinner" aria-label="Loading... Please wait."></div>
   </div>
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <p style="color: #808080;">Website Under Construction</p>
     </div>
   </div>
+    </main>
 </template>
 
 <style>
