@@ -12,33 +12,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <template>
   <main>
-  <div id="loading" class="loading-overlay" role="alert" aria-live="assertive">
-    <div class="loading-spinner" aria-label="Loading... Please wait."></div>
-  </div>
-  <div class="container" style="display: none;">
-    <div class="flex content">
-      <div class="box" aria-hidden="true"></div>
-      <section class="title">
-        <h2>
-          Hi, I Am <br>
-          <span class="name">Daniele Colaci</span>
-        </h2>
-      </section>
-      <div class="icon flex">
-        <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank" class="link-btn flex"
-          aria-label="Connect with me on LinkedIn">
-          Connected to LinkedIn
-          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/danielecolaci" target="_blank" class="link-btn flex"
-          aria-label="Follow me on GitHub">
-          Follow Me on GitHub
-          <i class="fa-brands fa-github" aria-hidden="true"></i>
-        </a>
-      </div>
-      <p style="color: #808080;">Website Under Construction</p>
+    <div id="loading" class="loading-overlay" role="alert" aria-live="assertive">
+      <div class="loading-spinner" aria-label="Loading... Please wait."></div>
     </div>
-  </div>
+    <div class="container" style="display: none;">
+      <div class="flex content">
+        <div class="box" aria-hidden="true"></div>
+          <section class="title">
+            <h2>
+              Hi, I Am <br>
+              <span class="name">Daniele Colaci</span>
+            </h2>
+          </section>
+          <div class="icon flex">
+            <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank" class="link-btn flex"
+            aria-label="Connect with me on LinkedIn">
+            Connected to LinkedIn
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/danielecolaci" target="_blank" class="link-btn flex"
+            aria-label="Follow me on GitHub">
+            Follow Me on GitHub
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+          <p style="color: #808080;">Website Under Construction</p>
+        </div>
+      </div>
     </main>
 </template>
 
